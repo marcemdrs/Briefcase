@@ -1,0 +1,69 @@
+<div class="row">
+	<ul class="nav nav-tabs">
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Proyectos</a>
+			<ul class="dropdown-menu">
+				<li><a (click)="setSelectedCourse('UML1110', 10)" class="dropdown-item">UML1110</a></li>
+				<li><a (click)="setSelectedCourse('Session', 10)" class="dropdown-item">Session (reCAPTCHA)</a></li>
+				<li><a (click)="setSelectedCourse('Session(plusGoogleSign-In)', 6)" class="dropdown-item">Session (reCAPTCHA + GoogleSign-In)</a></li>
+				<li><a (click)="setSelectedCourse('Translator', 5)" class="dropdown-item">Translator</a></li>
+				<li><a (click)="setSelectedCourse('TranslatorV2', 2)" class="dropdown-item">Translator V2</a></li>
+				<li><a (click)="setSelectedCourse('Solar', 8)" class="dropdown-item">Solar</a></li>
+				<li><a (click)="setSelectedCourse('Sun', 8)" class="dropdown-item">Sun</a></li>
+				<li><a (click)="setSelectedCourse('Edith', 13)" class="dropdown-item">Edith</a></li>
+				<li><a (click)="setSelectedCourse('FuerzaTactica', 15)" class="dropdown-item">Fuerza Táctica</a></li>
+				<li><a (click)="setSelectedCourse('MinalumDeMexico', 15)" class="dropdown-item">Minalum De México</a></li>
+				<li><a (click)="setSelectedCourse('CursosNubeAntes', 7)" class="dropdown-item">Cursos Nube antes</a></li>
+				<li><a (click)="setSelectedCourse('CursosNubeDespues', 7)" class="dropdown-item">Cursos Nube después</a></li>
+				<li><a (click)="setSelectedCourse('Portafolio-Angular-NodeJS', 8)" class="dropdown-item">Portafolio-Angular-NodeJS</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Proyectos (Udemy)</a>
+			<ul class="dropdown-menu">
+				<li><a (click)="setSelectedCourse('AprendiendoAjax', 2)" class="dropdown-item">Aprendiendo Ajax</a></li>
+				<li><a (click)="setSelectedCourse('BienesRaices', 6)" class="dropdown-item">Bienes raices</a></li>
+				<li><a (click)="setSelectedCourse('BlogDeCafe', 7)" class="dropdown-item">Blog de Cafe</a></li>
+				<li><a (click)="setSelectedCourse('Freelancer', 3)" class="dropdown-item">Freelancer</a></li>
+				<li><a (click)="setSelectedCourse('FrontendStore', 5)" class="dropdown-item">Frontend Store</a></li>
+				<li><a (click)="setSelectedCourse('FrontendStore(css-grid)', 4)" class="dropdown-item">Frontend Store (css, grid)</a></li>
+				<li><a (click)="setSelectedCourse('Gdlwebcamp', 9)" class="dropdown-item">Gdlwebcamp</a></li>
+				<li><a (click)="setSelectedCourse('BlogDeViajes(jquery)', 3)" class="dropdown-item">Blog de Viajes (jquery)</a></li>
+				<li><a (click)="setSelectedCourse('pdo(php-mysql)', 2)" class="dropdown-item">pdo (php-mysql)</a></li>
+				<li><a (click)="setSelectedCourse('ProyectoJS', 7)" class="dropdown-item">Proyecto JS</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<br>
+<div class="row" >
+	<strong><h4>{{titleCourse}}</h4></strong>
+	
+	<div [ngSwitch]="selectedCourse" class="col">
+		<div *ngSwitchCase=" 'UML1110' ">
+			<p>UML1110 es una herramienta que esta compuesta con Rappid que es una biblioteca de diagramas JointJS.</p>
+			<p>Es una herramienta desarrollada con JavaScript</p>
+			<p>Es una herramienta que permite la interacción</p>
+		</div>
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="bxslider col" id="slider">
+	</div>
+</div>
+<br>
+
+
+
