@@ -69,7 +69,8 @@ export class ProjectsComponent implements OnInit {
 		for(let i = 1; i <= this.num; i = i + 1){
 			console.log(i);
 			console.log(this.titleCourse);
-			text = "../Briefcase/assets/img/projects/"+this.titleCourse+"/"+i+".png";
+			console.log("testing");
+			text = "../assets/img/projects/"+this.titleCourse+"/"+i+".png";
 			var post = `
 			<div><img src=${text}></div>
 			`;
