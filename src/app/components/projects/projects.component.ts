@@ -70,7 +70,8 @@ export class ProjectsComponent implements OnInit {
 			console.log(i);
 			console.log(this.titleCourse);
 			console.log("testing");
-			text = "../Briefcase/assets/img/projects/"+this.titleCourse+"/"+i+".png";
+			//text = "../assets/img/projects/"+this.titleCourse+"/"+i+".png";
+			text = "/Briefcase/assets/img/projects/"+this.titleCourse+"/"+i+".png";
 			var post = `
 			<div><img src=${text}></div>
 			`;
