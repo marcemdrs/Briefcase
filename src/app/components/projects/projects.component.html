@@ -16,6 +16,7 @@
 				<li><a (click)="setSelectedCourse('CursosNubeAntes', 7)" class="dropdown-item">Cursos Nube antes</a></li>
 				<li><a (click)="setSelectedCourse('CursosNubeDespues', 7)" class="dropdown-item">Cursos Nube después</a></li>
 				<li><a (click)="setSelectedCourse('Portafolio-Angular-NodeJS', 8)" class="dropdown-item">Portafolio-Angular-NodeJS</a></li>
+				<li><a (click)="setSelectedCourse('RedSocial-Angular-NodeJS', 14)" class="dropdown-item">RedSocial-Angular-NodeJS</a></li>
 			</ul>
 		</li>
 		<li class="nav-item dropdown">
@@ -42,9 +43,16 @@
 	
 	<div [ngSwitch]="selectedCourse" class="col">
 		<div *ngSwitchCase=" 'UML1110' ">
-			<p>UML1110 es una herramienta que esta compuesta con Rappid que es una biblioteca de diagramas JointJS.</p>
-			<p>Es una herramienta desarrollada con JavaScript</p>
-			<p>Es una herramienta que permite la interacción</p>
+			<p>UML1110 es una herramienta que esta compuesta con Rappid, que es una biblioteca de diagramas JointJS.
+				Es una herramienta desarrollada con JavaScript con una arquitectura de MVC incluyendo la capa de servicios.
+				Así mismo, se aplican los conceptos de los patrones de diseño para su construcción.
+			</p>
+			<p>
+				Es una herramienta que permite la interacción con patrones de diseño, la cual consta de varias funcionalidades.
+				Las principales funcionalidades que permite aplicar a los patrones de diseño son: validación y traducción a diferentes lenguajes 
+				(Python, Java y Php).
+			</p>
+			<a href="https://smart-dpf.000webhostapp.com/entorno/index">Link de UML1110</a>
 		</div>
 
 
@@ -60,10 +68,18 @@
 
 
 
-	<div class="bxslider col" id="slider">
-	</div>
+	
+
 </div>
 <br>
 
-
-
+<div class="images-wrapper">
+	<div class="image-holder"   *ngFor="let image of _albums; let i=index">
+		<img 
+		class="img-thumbnail" 
+		[src]="image.src" 
+		(click)="open(i)"
+		alt="..."
+		/>
+	</div>
+</div>

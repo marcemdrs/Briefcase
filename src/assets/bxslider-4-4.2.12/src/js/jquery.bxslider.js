@@ -1134,7 +1134,7 @@
       slider.viewport.unbind('touchmove MSPointerMove pointermove', onTouchMove);
       slider.viewport.unbind('touchend MSPointerUp pointerup', onTouchEnd);
       if (slider.viewport.get(0).releasePointerCapture) {
-        slider.viewport.get(0).releasePointerCapture(slider.pointerId);
+        //slider.viewport.get(0).releasePointerCapture(slider.pointerId);
       }
     };
 
@@ -1232,7 +1232,7 @@
       }
       slider.viewport.unbind('touchend MSPointerUp pointerup', onTouchEnd);
       if (slider.viewport.get(0).releasePointerCapture) {
-        slider.viewport.get(0).releasePointerCapture(slider.pointerId);
+        //slider.viewport.get(0).releasePointerCapture(slider.pointerId);
       }
     };
 

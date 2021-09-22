@@ -32,6 +32,8 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/bxslider-4-4.2.12/dist/jquery.bxslider.min.css",
+              "node_modules/ngx-lightbox/lightbox.css",
+              "node_modules/font-awesome/css/font-awesome.css",
               "src/styles.css"
             ],
             "scripts": [
